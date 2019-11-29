@@ -1,0 +1,10 @@
+D:\oop\FractionConsole\bin\Debug\FractionConsole.exe.config
+D:\oop\FractionConsole\bin\Debug\FractionConsole.exe
+D:\oop\FractionConsole\bin\Debug\FractionConsole.pdb
+D:\oop\FractionConsole\bin\Debug\Fraction.dll
+D:\oop\FractionConsole\bin\Debug\Fraction.pdb
+D:\oop\FractionConsole\obj\Debug\FractionConsole.csprojAssemblyReference.cache
+D:\oop\FractionConsole\obj\Debug\FractionConsole.csproj.CoreCompileInputs.cache
+D:\oop\FractionConsole\obj\Debug\FractionConsole.csproj.CopyComplete
+D:\oop\FractionConsole\obj\Debug\FractionConsole.exe
+D:\oop\FractionConsole\obj\Debug\FractionConsole.pdb

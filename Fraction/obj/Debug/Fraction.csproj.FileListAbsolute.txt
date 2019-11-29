@@ -1,0 +1,6 @@
+D:\oop\Fraction\bin\Debug\Fraction.dll
+D:\oop\Fraction\bin\Debug\Fraction.pdb
+D:\oop\Fraction\obj\Debug\Fraction.csprojAssemblyReference.cache
+D:\oop\Fraction\obj\Debug\Fraction.csproj.CoreCompileInputs.cache
+D:\oop\Fraction\obj\Debug\Fraction.dll
+D:\oop\Fraction\obj\Debug\Fraction.pdb
