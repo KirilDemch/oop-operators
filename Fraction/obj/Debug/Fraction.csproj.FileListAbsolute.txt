@@ -4,3 +4,8 @@ D:\oop\Fraction\obj\Debug\Fraction.csprojAssemblyReference.cache
 D:\oop\Fraction\obj\Debug\Fraction.csproj.CoreCompileInputs.cache
 D:\oop\Fraction\obj\Debug\Fraction.dll
 D:\oop\Fraction\obj\Debug\Fraction.pdb
+E:\oop-operators\Fraction\bin\Debug\Fraction.dll
+E:\oop-operators\Fraction\bin\Debug\Fraction.pdb
+E:\oop-operators\Fraction\obj\Debug\Fraction.csprojAssemblyReference.cache
+E:\oop-operators\Fraction\obj\Debug\Fraction.dll
+E:\oop-operators\Fraction\obj\Debug\Fraction.pdb

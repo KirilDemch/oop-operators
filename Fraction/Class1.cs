@@ -22,10 +22,15 @@ namespace NameFraction
             this.Numerator = Numerator;
             Denominator = 1;
         }
-        public Fraction(Fraction a)
+        public Fraction(double Number)
         {
-            Numerator = a.Numerator;
-            Denominator = a.Denominator;
+            Denominator = 1;
+            while ((Number % (int)Number) != 0)
+            {
+                Number *= 10;
+                Denominator *= 10;
+            }
+            Numerator = (long)Number;
         }
         private void Fix()
         {
@@ -40,31 +45,34 @@ namespace NameFraction
             }
         }
         // наибольший общий делитель 
-        private static long Nod(Fraction a)
+        private static long Nod(long Numerator, long Denominator)
         {
-            a.Numerator = Math.Abs(a.Numerator);
-            a.Denominator = Math.Abs(a.Denominator);
-            while (a.Denominator != 0 && a.Numerator != 0)
+            Numerator = Math.Abs(Numerator);
+            Denominator = Math.Abs(Denominator);
+            while (Denominator != 0 && Numerator != 0)
             {
-                if (a.Numerator % a.Denominator > 0)
+                if (Numerator % Denominator > 0)
                 {
-                    var temp = a.Numerator;
-                    a.Numerator = a.Denominator;
-                    a.Denominator = temp % a.Denominator;
+                    long temp = Numerator;
+                    Numerator = Denominator;
+                    Denominator = temp % Denominator;
                 }
                 else break;
             }
-            if (a.Denominator != 0 && a.Numerator != 0) return a.Denominator;
+            if (Denominator != 0 && Numerator != 0) return Denominator;
+
             return 0;
+
         }
-        private static void Simplify(Fraction a)
+        private static Fraction Simplify(Fraction a)
         {
-            long nod = Nod(a);
-            if (nod > 0)
+            long nod = Nod(a.Numerator, a.Denominator);
+            if (nod != 0)
             {
                 a.Numerator /= nod;
                 a.Denominator /= nod;
             }
+            return a;
         } 
 
         // унарні: +, –  
@@ -78,24 +86,21 @@ namespace NameFraction
             return a;
         }
         // бінарні +, –, *, /
-        public static Fraction operator +(Fraction a, Fraction b)
+        public static Fraction operator + (Fraction a, Fraction b)
         {
-
-            return new Fraction(a.Numerator * b.Denominator + b.Numerator * a.Denominator, a.Denominator * b.Denominator);
+            return Simplify(new Fraction(a.Numerator * b.Denominator + b.Numerator * a.Denominator, a.Denominator * b.Denominator));
         }
-        public static Fraction operator -(Fraction a, Fraction b)
+        public static Fraction operator - (Fraction a, Fraction b)
         {
-            Fraction res = new Fraction(a.Numerator * b.Denominator - b.Numerator * a.Denominator, a.Denominator * b.Denominator);
-            //Nod(res);
-            return res;
+            return Simplify(new Fraction(a.Numerator * b.Denominator - b.Numerator * a.Denominator, a.Denominator * b.Denominator));
         }
-        public static Fraction operator *(Fraction a, Fraction b)
+        public static Fraction operator * (Fraction a, Fraction b)
         {
-            return new Fraction(a.Numerator * b.Numerator, a.Denominator * b.Denominator);
+            return Simplify(new Fraction(a.Numerator * b.Numerator, a.Denominator * b.Denominator));
         }
-        public static Fraction operator /(Fraction a, Fraction b)
+        public static Fraction operator / (Fraction a, Fraction b)
         {
-            return new Fraction(a.Numerator * b.Denominator, a.Denominator * b.Numerator);
+            return Simplify(new Fraction(a.Numerator * b.Denominator, a.Denominator * b.Numerator));
         }
         // бінарні: >, >=, <, <=, ==, !=
 

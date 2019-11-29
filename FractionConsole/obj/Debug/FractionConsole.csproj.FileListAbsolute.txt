@@ -8,3 +8,12 @@ D:\oop\FractionConsole\obj\Debug\FractionConsole.csproj.CoreCompileInputs.cache
 D:\oop\FractionConsole\obj\Debug\FractionConsole.csproj.CopyComplete
 D:\oop\FractionConsole\obj\Debug\FractionConsole.exe
 D:\oop\FractionConsole\obj\Debug\FractionConsole.pdb
+E:\oop-operators\FractionConsole\bin\Debug\FractionConsole.exe.config
+E:\oop-operators\FractionConsole\bin\Debug\FractionConsole.exe
+E:\oop-operators\FractionConsole\bin\Debug\FractionConsole.pdb
+E:\oop-operators\FractionConsole\bin\Debug\Fraction.dll
+E:\oop-operators\FractionConsole\bin\Debug\Fraction.pdb
+E:\oop-operators\FractionConsole\obj\Debug\FractionConsole.csprojAssemblyReference.cache
+E:\oop-operators\FractionConsole\obj\Debug\FractionConsole.csproj.CopyComplete
+E:\oop-operators\FractionConsole\obj\Debug\FractionConsole.exe
+E:\oop-operators\FractionConsole\obj\Debug\FractionConsole.pdb

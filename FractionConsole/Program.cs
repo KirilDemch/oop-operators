@@ -13,7 +13,8 @@ namespace FractionConsole
         {
             Fraction drob1 = new Fraction(1, 2);
             Fraction drob2 = new Fraction(3, 5);
-            Console.WriteLine(drob1 - drob2);
+            Fraction drob3 = new Fraction(12.4);
+            Console.WriteLine(drob3 + drob1 / (-drob1) * drob2 - drob1);
             Console.ReadKey();
         }
     }
